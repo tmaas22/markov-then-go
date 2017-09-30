@@ -1,6 +1,10 @@
 language: go
 
-script:
-  - echo "all the fun stuff"
-
-  
+jobs:
+  include:
+    - stage: analysis
+      script: go fmt
+    - stage: run
+      script:
+        - echo "We are running ci"
+        - go run main.go
