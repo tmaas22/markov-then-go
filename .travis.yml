@@ -1,0 +1,6 @@
+language: go
+
+script:
+  - echo "all the fun stuff"
+
+  
